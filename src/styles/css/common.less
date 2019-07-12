@@ -1,0 +1,580 @@
+nav,.box{
+  .top-part-search{
+    overflow: hidden;
+    .search-part{
+      margin-top: 20px;
+      width: 25%;
+      float: left;
+      @media screen{
+        @media (max-width:1400px){
+          width:33.3%;
+        }
+      }
+      span{
+        display:inline-block;
+        width:30%;
+        text-align: right;
+        margin-right: 5px;
+        white-space: nowrap;
+      }
+      >.el-input{
+        width: 60%;
+        .el-input__suffix-inner{
+          height: 100%;
+        }
+        .el-select{
+          width: 100%;
+        }
+      }
+    }
+    .search-btn-part{
+      float: right;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      button{
+        float: right;
+        margin-right: 10px;
+        width: 120px;
+        span{
+          width: auto;
+        }
+      }
+    }
+  }
+  .tool-part{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 50px;
+    button{
+      width: 120px;
+    }
+    button+button{
+      margin-left: 20px;
+    }
+  }
+  .pull-right{
+    button{
+      width: 120px;
+      span{
+        width: auto;
+      }
+    }
+  }
+  .marginLeft10{
+    margin-left: 10px;
+  }
+}
+/*开始-角色切换页面样式*/
+.selecte-div .el-collapse-item__header, .selecte-div .el-collapse-item__wrap {
+  border-bottom: none;
+}
+.role-select-sty .el-alert__title{
+  font-size: 14px;
+}
+/*结束-角色切换页面样式*/
+/*.content{*/
+/*margin: 5px 0px 0px 5px;*/
+/*background: #fff;*/
+/*}*/
+//表头错位问题
+//body .el-table th.gutter{
+//  display: table-cell!important;
+//}
+//
+//body .el-table colgroup.gutter{
+//  display: table-cell!important;
+//}
+/*开始-年度学期-部门管理页面样式*/
+/*table表格去掉滚动条*/
+
+.semester div.el-table__body-wrapper{
+  overflow: hidden;
+}
+.semester.show-scrollBar div.el-table__body-wrapper{
+  overflow-x: hidden;
+  @media screen{
+    @media (max-width:1360px){
+      overflow-x: scroll;
+    }
+  }
+}
+.overflowYAuto div.el-table__body-wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/*单元格行高*/
+.el-table table .cell{
+  line-height: 16px;
+  text-align: center;
+  color:#444;
+}
+/*固定单元格名,效果不换行*/
+.no-wrap-cell>div.cell{
+  white-space: nowrap;
+}
+//换行，选课需要
+.import-style.columns_much .no-wrap-cell>div.cell{
+  white-space: normal;
+}
+/*dialog弹出框样式*/
+.import-style{
+
+}
+.import-style input[type="file"] {
+  display: none;
+}
+.semester .el-dialog__body {
+  padding: 31px 10px 0px 30px;
+}
+.semeter .el-date-editor--daterange.el-input, .el-date-editor--daterange.el-input__inner, .el-date-editor--timerange.el-input, .el-date-editor--timerange.el-input__inner {
+  width: 100% !important;
+}
+
+
+.semester .el-dialog{
+  width:40%;
+}
+/*结束-年度学期-部门管理页面样式*/
+
+/*开始-公共样式*/
+.content {
+  margin-top: 65px;
+  min-height: 100vh;
+  padding-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.margin-r-5{
+  margin: 0px 10px;
+}
+/*table中的button样式*/
+.el-table .el-button--medium, .el-table .el-button{
+  padding:0;
+}
+.el-sort{
+  padding-left: 16px;
+}
+.box-body {
+  padding: 9px;
+}
+.caret-wrapper{
+  margin-right: -11px;
+}
+/*th,td样式*/
+.el-table table th,.el-table table td{
+  color:#444;
+  padding: 10px 0;
+}
+.columns_much .el-table__empty-block{
+    text-align: left;
+}
+
+/*导航栏样式*/
+/*slide滑块 */
+.box .el-switch__label {
+  color:#409EFF;
+}
+.content-header > .breadcrumb .active {
+  color:#222;
+  cursor:pointer;
+}
+/*switch样式*/
+.el-switch__label{
+  line-height: 20px;
+}
+.el-switch {
+  line-height: 0px !important;
+}
+
+.box-header {
+  margin-top: 30px;
+}
+/*导入样式*/
+.import-style .el-dialog{
+  width:40%;
+  min-width: 761px;
+}
+.import-style .el-upload-dragger{
+  width: 420px;
+}
+.import-style .el-upload-list.el-upload-list--text{
+  width: 60%;
+  min-width:430px;
+  margin: 10px auto 5px;
+  text-align: left;
+}
+.import-style .font-size{
+  font-size: 14px;
+}
+.import-style .a-font-color{
+  color:#409EFF;
+  cursor:pointer;
+}
+
+.import-style .el-dialog__body {
+  padding: 20px 20px;
+}
+.import-style-padding .el-button{
+  padding: 12px 10px;
+}
+
+.scorll-style-none div.el-table__body-wrapper{
+  overflow: hidden;
+}
+.setdutyteacher-style .el-dialog,.othersteacher-style .el-dialog{
+  width: 900px;
+}
+.setdutyteacher-style .el-dialog__body{
+  padding: 20px 20px;
+}
+.setdutyteacher-style div.el-table__body-wrapper{
+  overflow: hidden;
+}
+.setdutyteacher-style .el-input__inner{
+  height:30px !important;
+  line-height: 10px;
+}
+.othersteacher-style .el-input__inner{
+  height:30px !important;
+  line-height: 10px;
+}
+.othersteacher-style .el-table table th,.othersteacher-style .el-table table td {
+  padding: 5px 0;
+}
+.othersteacher-style div.el-table__body-wrapper{
+  overflow: hidden;
+}
+/*结束-公共样式*/
+
+/*开始-学生页面样式*/
+/*添加页面下拉框样式*/
+.student-style .el-select{
+  width:100%;
+  display: block;
+}
+.student-style .demo-ruleForm{
+  padding: 40px 0px;
+}
+/*日期控件样式*/
+.student-style .el-date-editor.el-input,.student-style .el-date-editor.el-input__inner {
+  width: 100%;
+}
+/*结束-学生页面样式*/
+/*公共body*/
+.box{
+  ol.nav-top{
+    list-style: none;
+    padding-left: 0;
+    border-bottom: 1px solid #eee;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    li{
+      float: left;
+      padding: 0 25px;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 50px;
+      a{
+        color:#000;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+    li.active{
+      border-top: 2px solid #f56c6c;
+      border-right: 1px solid #eee;
+      border-bottom: 1px solid #fff;
+    }
+    li+li{
+      margin-left: 20px;
+    }
+    li+li.active{
+      border-left: 1px solid #eee;
+    }
+  }
+  /*列表*/
+  .table-list-last {
+    tr{
+      td:last-child{
+        .cell{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .el-table__empty-block{
+    min-height: 80px;
+    height: 80px;
+  }
+}
+.information-management{
+  .el-lable-list{
+    .el-radio-group{
+      .el-radio:last-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
+/*返回顶部*/
+.goBackTop{
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+  width: 45px;
+  height: 45px;
+  z-index: 5;
+  p{
+    background: url(/static/img/back_top1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    opacity: 0;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+
+
+    z-index: 30;
+    text-align: center;
+    color: #fff;
+    //background: #ff4081;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -webkit-transform: translateX(250%);
+    transform: translateX(250%);
+  }
+  p.in {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-duration: 1s;
+}
+
+
+.el-upload-list__item:first-child {
+  margin-bottom: 15px;
+}
+//选择角色
+.role-select-sty span.el-alert__title {
+  font-size: 15px;
+  font-weight: 700;
+}
+#app .todo-devin .todo-list .todo-content h2{
+  font-size: 16px;
+}
+.row .todo-content .todo-completed{
+  background: #ff3b3b;
+  font-size: 14px;
+  &:hover{
+    background-color:#f74141;
+    -webkit-box-shadow: 0px 0px 2px #f74141;
+    -moz-box-shadow: 0px 0px 2px #f74141;
+    box-shadow: 0px 0px 2px #f74141;
+  }
+}
+.row .todo-content:hover .todo-completed{
+  background-color:#f74141;
+  -webkit-box-shadow: 0px 0px 3px #f74141;
+  -moz-box-shadow: 0px 0px 3px #f74141;
+  box-shadow: 0px 0px 3px #f74141;
+}
+.side-todo ul{
+  li.academyId.active{
+    background: linear-gradient(to right,#ff3b3b, #f74141);
+    .triangle_border_left{
+      display: block;
+    }
+    &:hover{
+      background: -webkit-linear-gradient(left, #f74141, #f71b1b); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(right, #f74141, #f71b1b); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(right, #f74141, #f71b1b); /* Firefox 3.6 - 15 */
+      background: linear-gradient(to right, #f74141, #f71b1b); /* 标准的语法 */
+      -webkit-box-shadow: 0px 0px 1px #f71b1b;
+      -moz-box-shadow: 0px 0px 1px #f71b1b;
+      box-shadow: 0px 0px 1px #f71b1b;
+    }
+  }
+  li.academyId{
+    cursor:pointer;
+    background: -webkit-linear-gradient(left, #a2a1a1, #828080); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #a2a1a1, #828080); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #a2a1a1, #828080); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #a2a1a1, #828080); /* 标准的语法 */
+    padding-right: 20px;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px!important;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom: 0px!important;
+    white-space:nowrap;
+    position: relative;
+    /*长度限制，超过200px隐藏*/
+    width: 100%;
+    overflow: hidden;
+    /*隐藏部分。。。显示*/
+    text-overflow:ellipsis;
+    border-bottom-width: 0px!important;
+    position: relative;
+    i{
+      position: absolute;
+      right:10px;
+      top:50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    &:hover{
+      -webkit-box-shadow: 0px 0px 1px #828080;
+      -moz-box-shadow: 0px 0px 1px #828080;
+      box-shadow: 0px 0px 1px #828080;
+    }
+  }
+  li.academyId:last-child{
+    margin-bottom: 15px;
+  }
+}
+div.el-alert__content{
+  padding:0 15px;
+}
+//安全退出
+.side-todo .el-button--text{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #409eff;
+  //border-bottom:1px solid #409eff;
+  //background: #a2a1a1;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  &:hover{
+    color: #66b1ff;
+    //border-bottom:1px solid #66b1ff;
+    //border-color: transparent;
+    background-color: transparent
+  }
+}
+.el-button--text.user-login-out{
+  //border-bottom:1px solid #409eff;
+  padding-bottom: 6px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  i{
+    display: block;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    bottom:0;
+    width: 0px;
+    height: 1px;
+    background: #66b1ff;
+  }
+  &:hover i{
+    -webkit-animation: width100 0.5s 1 forwards;
+    -o-animation: width100 0.5s 1 forwards;
+    animation: width100 0.5s 1 forwards;
+  }
+}
+@keyframes width100 {
+  from {
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+@-webkit-keyframes width100 {
+  from {
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+.el-button--text.user-login-out:hover{
+  color:#66b1ff;
+  //border-bottom:1px solid #66b1ff;
+}
+//向左小三角
+.triangle_border_left{
+  display: none;
+  width:0;
+  height:0;
+  border-width:8px 14px 8px 0px;
+  border-style:solid;
+  border-color:transparent #fff transparent transparent;/*透明 灰 透明 透明 */
+  //margin:0px auto;
+  position:absolute;
+  top:22px;
+  right:0;
+}
+.pleaseSelect input, .explain {
+  color : #c0c4cc;
+}
+//教师信息列表
+.tool-content .flex-part .el-autocomplete{
+   width: 100%;
+ }
+.tool-content .flex-part .el-select{
+  width: 100%;
+}
+//教学管理员调整
+.right-check-part .effect .el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label{
+  font-size: 14px;
+  color:#333;
+}
+#app .box .el-table table .cell{
+  float:left;
+  width:100%;
+  display:inline;
+}
